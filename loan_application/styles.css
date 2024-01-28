@@ -1,0 +1,97 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.container {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background-color: #96C2DB;
+    padding: 50px;
+    border: 1px solid #96C2DB;
+    border-radius: 30px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    
+}
+
+h1, h2 {
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+label {
+    margin-bottom: 10px;
+}
+
+input, select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    width: 60%;
+}
+
+input[type="submit"] {
+    background-color: #01257D;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #01257D;
+}
+
+#borrower-dashboard, #lender-dashboard, #admin-dashboard {
+    display: none;
+}
+
+#borrower-dashboard {
+    background-color: #E5EDF1;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+}
+
+#lender-dashboard {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#admin-dashboard {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#loan-requests, #loan-payments, #transactions {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#loan-requests li, #loan-payments li, #transactions li {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+#loan-requests li:last-child, #loan-payments li:last-child, #transactions li:last-child {
+    border-bottom: none;
+}

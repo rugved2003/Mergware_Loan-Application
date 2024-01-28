@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loan Application</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Loan Application</h1>
+        <form id="register-form">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email"><br><br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password"><br><br>
+            <label for="role">Role:</label>
+            <select id="role" name="role">
+                <option value="borrower">Borrower</option>
+                <option value="lender">Lender</option>
+                <option value="admin">Admin</option>
+            </select><br><br>
+            <input type="submit" value="Register">
+        </form>
+        <h2>Dashboard</h2>
+        <div id="borrower-dashboard">
+            <h3>Loan Requests</h3>
+            <ul id="loan-requests"></ul>
+            <form id="request-loan-form">
+                <label for="amount">Amount:</label>
+                <input type="number" id="amount" name="amount"><br><br>
+                <input type="submit" value="Request Loan">
+            </form>
+        </div>
+        <div id="lender-dashboard">
+            <h3>Loan Payments</h3>
+            <ul id="loan-payments"></ul>
+            <form id="pay-loan-form">
+                <label for="amount">Amount:</label>
+                <input type="number" id="amount" name="amount"><br><br>
+                <input type="submit" value="Pay Loan">
+            </form>
+        </div>
+        <div id="admin-dashboard">
+            <h3>Transactions</h3>
+            <ul id="transactions"></ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
